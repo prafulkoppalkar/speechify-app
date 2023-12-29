@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Workspace from './Components/Workspace';
 import reportWebVitals from './reportWebVitals';
+import { RequestContextProvider } from './ContextProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RequestContextProvider>
+      <Workspace />
+    </RequestContextProvider>
   </React.StrictMode>
 );
 

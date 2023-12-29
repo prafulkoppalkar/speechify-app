@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+  background-color: #f0f6ff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10em;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App-header {
+  padding: 1em;
+  font-size:xx-large;
+  display: flex;
+  color: rgb(0, 0, 0);
+}
+
+.title{
+  font-size: large;
+  display: flex;
+  color: rgb(0, 0, 0);
+}
+
+.text__container {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 600px;
+  padding:2em;
+}
+
+.text__area{
+  border:2px solid #dde8fc;
+  display: flex;
+  width:100%;
+  resize: none;
+  border-radius: 4px;
+  padding: 2em;
+  background-color: #e7efff;
+}
+
+.button__container{
+  display: flex;
+  gap:2em;
+  padding: 2em;
+}
+.button{
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(67, 103, 243);
+  border: none;
+  color: #ffffff;
+}
+
+.button:hover{
+  transform: scale(1.05);
+  transition: all ease 200ms;
+}
+
+.alter__container{
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.pitch{
+  display: flex;
+  gap: 0.5em;
+}
+.playback{
+  display: flex;
+  gap: 0.5em;
+}
+
+@media only screen and (max-width: 680px) {
+  .text__container {
+    width: 80%;
+  }
+  .alter__container{
+    flex-direction: column;
+  }
+  .button__container{
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+.voices__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin: 1em; */
+    gap: 0.5em;
+}
+.dropdown{
+    border:2px solid #dde8fc;
+  display: flex;
+  border-radius: 8px;
+  padding: 2px;
+  background-color: #fbfbfb;
+}
